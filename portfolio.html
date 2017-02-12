@@ -1,0 +1,152 @@
+<!DOCTYPE html>
+<html lang="en-US">
+<head>
+	<meta charset="UTF-8" name="viewport" content="width=device-width, initial-scale=1">
+	<link rel="stylesheet" href="http://www.w3schools.com/lib/w3.css">
+	<link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Montserrat">
+	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+	<!-- <link > -->
+
+	<style>
+		body,h2,h3,h4,h5,h6 {
+			font-family: "Montserrat", sans-serif;
+		}
+		.w3-row-padding {
+			margin-bottom: 12px;
+		}
+		/* Set the width of the sidenav to 120px */
+		.w3-sidenav {
+			width: 120px;background: #222;
+		}
+		/* Add a left margin to the "page content" that matches the width of the sidenav (120px) */
+		#main {
+			margin-left: 120px;
+		}
+		/* Remove margins from "page content" on small screens */
+		@media only screen and (max-width: 600px) {
+			#main {
+				margin-left: 0;
+			}
+		}
+		ul.contact {
+			text-align: center;
+			list-style-type: none;
+			padding: 2em;
+		}
+		#imgBox {
+			position: relative;
+			width: 800;
+			height: 200;
+		}
+		#link1 {
+			position: absolute;
+			float: right;
+			margin: auto;
+			padding: 20px;
+			width: 120px;
+			height: 140px;
+		}
+		section.topicLeft {
+			<!--margin-right: 800px;-->
+			left: 0px;
+			width: 450px;
+			padding: 10px;
+		}
+
+		<!--Needs to be fixed-->
+			section.topicRight {
+			<!--margin-right: 800px;-->
+			float: right;
+			width: 450px;
+			padding: 10px;
+		}
+
+
+		h1 {
+			font-family: "Montserrat", sans-serif;
+			font-weight: Bold;
+		}
+}
+	</style>
+
+
+	<title>Daniel's Portfolio</title>
+</head>
+
+<body class="w3-black">
+
+	<header class="w3-container">
+		<h1>Daniel's Portfolio</h1>
+		<div id="imgBox">
+			<img id="link1" src="Link1_1.png" alt="Link">
+		</div>
+			<nav class="w3-container"><!--Nav-->
+				<ul class="w3-navbar w3-black">
+					<li class="w3-right"><a class="w3-border" href="#contact">Contact Info</a></li>
+					<li class="w3-right"><a class="w3-border" href="#other">Other</a></li>
+					<li class="w3-right"><a class="w3-border" href="#experience">Experience</a></li>
+					<li class="w3-right"><a class="w3-border" href="#about">About Me</a></li>
+				</ul>
+			</nav>
+	</header>
+
+
+	<div class="w3-container w3-white">
+		<section class="topicLeft">
+			<h3 id="about">About Me</h3>
+			<p>
+				Daniel grew up in Arizona with two brothers, Cesar and Uriel. He lived in Phoenix for a while and then moved to Buckeye.
+				As a hobby, he would skateboard all over town with his friends. Suprising enough, he hasn't broken any bones. He attended
+				two high schools, Alhambra and Estrella Foothills. He played a little football at Alhambra, and grew to love watching the sport
+				until his team started playing terrible.
+
+			</p>
+		</section>
+	</div>
+	<br />
+	<div class="w3-container w3-white">
+		<section class="topicRight">
+			<h3 id="experience">Experience</h3>
+			<p>
+				<ul>
+					<li>Linux knowledge</li>
+					<li>Windows knowledge</li>
+					<li>OSX knowledge</li>
+					<li>C</li>
+					<li>C++</li>
+					<li>C#</li>
+					<li>Java</li>
+					<li>PERL</li>
+					<li>Python</li>
+					<li>Bash scripting</li>
+					<li>Javascript</li>
+					<li>HTML</li>
+				</ul>
+			</p>
+		</section>
+	</div>
+
+	<br />
+	<div class="w3-container w3-white">
+		<section class="topicRight">
+			<h3 id="other">Other</h3>
+			<p>
+                This is Extra information For testing Purposes.
+			</p>
+		</section>
+	</div>
+
+
+	<footer>
+		<ul id="contact" class="contact">
+			<li>1901 E Apache Blvd Apt 349</li>
+			<li>Tempe, AZ 85281</li>
+			<li>602-302-6826</li>
+			<li>enriquezd12@yahoo.com</li>
+			<li>denriquez2012@gmail.com</li>
+			<li>deenriqu@asu.edu</li>
+		</ul>
+	</footer>
+
+</body>
+</html>
