@@ -5,80 +5,23 @@
 	<link rel="stylesheet" href="http://www.w3schools.com/lib/w3.css">
 	<link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Montserrat">
 	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
-	<!-- <link > -->
-
+	<link rel="stylesheet" type="text/css" href="myStyle.css">
 	<style>
-		body,h2,h3,h4,h5,h6 {
-			font-family: "Montserrat", sans-serif;
-		}
-		.w3-row-padding {
-			margin-bottom: 12px;
-		}
-		/* Set the width of the sidenav to 120px */
-		.w3-sidenav {
-			width: 120px;background: #222;
-		}
-		/* Add a left margin to the "page content" that matches the width of the sidenav (120px) */
-		#main {
-			margin-left: 120px;
-		}
-		/* Remove margins from "page content" on small screens */
-		@media only screen and (max-width: 600px) {
-			#main {
-				margin-left: 0;
-			}
-		}
-		ul.contact {
-			text-align: center;
-			list-style-type: none;
-			padding: 2em;
-		}
-		#imgBox {
-			position: relative;
-			width: 800;
-			height: 200;
-		}
-		#link1 {
-			position: absolute;
-			float: right;
-			margin: auto;
-			padding: 20px;
-			width: 120px;
-			height: 140px;
-		}
-		section.topicLeft {
-			<!--margin-right: 800px;-->
-			left: 0px;
-			width: 450px;
-			padding: 10px;
-		}
-
-		<!--Needs to be fixed-->
-			section.topicRight {
-			<!--margin-right: 800px;-->
-			float: right;
-			width: 450px;
-			padding: 10px;
-		}
-
-
-		h1 {
-			font-family: "Montserrat", sans-serif;
-			font-weight: Bold;
-		}
-}
 	</style>
 
+	<script src="script.js"></script>
 
 	<title>Daniel's Portfolio</title>
 </head>
 
-<body class="w3-black">
+<body class="w3-black" onload="Move()">
 
-	<header class="w3-container">
+	<header class="w3-container shadow">
 		<h1>Daniel's Portfolio</h1>
 		<div id="imgBox">
-			<img id="link1" src="Link1_1.png" alt="Link">
+			<!--<div id="animate">-->
+			<img id="link" src="Link\Link0.png" alt="Link">
+
 		</div>
 			<nav class="w3-container"><!--Nav-->
 				<ul class="w3-navbar w3-black">
@@ -91,7 +34,7 @@
 	</header>
 
 
-	<div class="w3-container w3-white">
+	<div class="w3-container w3-white shadow">
 		<section class="topicLeft">
 			<h3 id="about">About Me</h3>
 			<p>
@@ -104,8 +47,9 @@
 		</section>
 	</div>
 	<br />
-	<div class="w3-container w3-white">
-		<section class="topicRight">
+	<br />
+	<div class="w3-container w3-white shadow">
+		<section class="topicLeft">
 			<h3 id="experience">Experience</h3>
 			<p>
 				<ul>
@@ -125,17 +69,17 @@
 			</p>
 		</section>
 	</div>
-
 	<br />
-	<div class="w3-container w3-white">
-		<section class="topicRight">
+	<br />
+	<div class="w3-container w3-white shadow">
+		<section class="topicLeft">
 			<h3 id="other">Other</h3>
 			<p>
                 This is Extra information For testing Purposes.
 			</p>
 		</section>
 	</div>
-
+	<br />
 
 	<footer>
 		<ul id="contact" class="contact">

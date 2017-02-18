@@ -1,0 +1,63 @@
+body,h2,h3,h4,h5,h6 {
+	font-family: "Montserrat", sans-serif;
+}
+.w3-row-padding {
+	margin-bottom: 12px;
+}
+/* Set the width of the sidenav to 120px */
+.w3-sidenav {
+	width: 120px;background: #222;
+}
+/* Add a left margin to the "page content" that matches the width of the sidenav (120px) */
+#main {
+	margin-left: 120px;
+}
+/* Remove margins from "page content" on small screens */
+@media only screen and (max-width: 600px) {
+	#main {
+		margin-left: 0;
+	}
+}
+ul.contact {
+	text-align: center;
+	list-style-type: none;
+	padding: 2em;
+}
+#imgBox {
+	position: relative;
+	width: 800;
+	height: 200;
+}
+#animate {
+	width: 400px;
+	height: 140px;
+	position: absolute;
+	background: white;
+}
+#link {
+	position: relative;
+	margin: auto;
+	left: 100em;
+	padding: 20px;
+	width: 140px;
+	height: 140px;
+}
+section.topicLeft {
+	left: 0px;
+	width: 450px;
+	padding: 10px;
+}
+
+section.topicRight {
+	float: right;
+	width: 450px;
+	padding: 10px;
+}
+.shadow {
+	box-shadow: 10px 10px 10px grey;
+}
+
+h1 {
+	font-family: "Montserrat", sans-serif;
+	font-weight: Bold;
+}
