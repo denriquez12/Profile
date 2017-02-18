@@ -1,16 +1,24 @@
 function Move() {
 	let link = document.getElementById("link");
-	window.alert("Link left = %s", link.style.left);
-	let pos = parseInt(link.style.left) + "<br>";
-	window.alert("POS = %d", pos);
-	let id = setInterval(box, 10);
+	let pos = parseInt(window.getComputedStyle(document.getElementById('link'),null).getPropertyValue('left'));
+	let beginPosition = pos;
+	let rightWalk = ["Link\\Link_R_Move1.png", "Link\\Link_R_Move2.png"];
+	let leftWalk = ["Link\\Link_L_Move1.png", "Link\\Link_L_Move2.png"];
+	let forward = "Link\\Link.png";
+	let id = setInterval(box, 8);
+	let i = 0;
 	
+	//document.write(leftWalk[0] + " AND " + leftWalk[1]);
 	function box() {
-		if (pos == 0) {
+		if (pos == 10) {
+			link.src = forward;
 			clearInterval(id);
+			i = 0;
 		}else {
 			pos--;
-			link.style.left = pos + 'em';
+			i++;
+			link.src = leftWalk[i%2];
+			link.style.left = pos + 'px';
 		}
 	}
 }
