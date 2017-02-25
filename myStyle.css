@@ -76,6 +76,23 @@ ul.exp{
 ul.exp li {
 	padding: 5px;
 }
+.dropDownContent {
+	display: none;
+    position: absolute;
+    background-color: grey;
+    min-width: 160px;
+    box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+    z-index: 1;
+}
+/* Hovering over dropdown */
+.dropDownContent a:hover {
+	background-color: #f1f1f1
+}
+/* Show the dropdown menu on hover */
+#tools:onclick .dropDownContent {
+    display: block;
+}
+
 
 h1,h3 {
 	font-family: "Montserrat", sans-serif;
