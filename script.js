@@ -6,7 +6,7 @@ function Move() {
 	let rightWalk = ["Link\\Link_R_Move1.png", "Link\\Link_R_Move2.png"];
 	let leftWalk = ["Link\\Link_L_Move1.png", "Link\\Link_L_Move2.png"];
 	let forward = "Link\\Link.png";
-	let id = setInterval(box, 7);
+	let id = setInterval(box, 8);
 	let i = 0;
 	let direction = "Left"
 

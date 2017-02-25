@@ -30,8 +30,8 @@ ul.contact {
 	margin: auto;
 	left: 80em;
 	padding: 20px;
-	width: 240px;
-	height: 240px;
+	width: 180px;
+	height: 180px;
 }
 section.topicLeft {
 	left: 0px;
@@ -64,8 +64,15 @@ body,h2,h4,h5,h6 {
 	background-color: black;
 }
 
+#topic1, #topic2, #topic3 {
+	border-width:5px;  
+    border-style:ridge;
+}
+ul.exp {
+	list-style-image: url('Link\\Link_Li.png');	
+}
 
-h1 {
+h1,h3 {
 	font-family: "Montserrat", sans-serif;
 	font-weight: Bold;
 }
