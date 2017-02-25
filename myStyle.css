@@ -22,16 +22,17 @@ ul.contact {
 }
 #imgBox {
 	position: relative;
-	width: 800;
-	height: 240;
+	width: 400px;
+	height: 132px;
 }
 #link {
 	position: relative;
 	margin: auto;
-	left: 80em;
+	left: 1000px;
+	/*80em;*/
 	padding: 20px;
-	width: 180px;
-	height: 180px;
+	width: 160px;
+	height: 160px;
 }
 section.topicLeft {
 	left: 0px;
@@ -68,11 +69,16 @@ body,h2,h4,h5,h6 {
 	border-width:5px;  
     border-style:ridge;
 }
-ul.exp {
-	list-style-image: url('Link\\Link_Li.png');	
+ul.exp{
+	vertical-align: middle;
+	list-style: square inside url('Link\\Link_Li.png');	
+}
+ul.exp li {
+	padding: 5px;
 }
 
 h1,h3 {
 	font-family: "Montserrat", sans-serif;
+	text-shadow: 2px 1px grey;
 	font-weight: Bold;
 }

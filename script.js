@@ -12,7 +12,7 @@ function Move() {
 
 
 	function box() {
-		if (pos === 60) {
+		if (pos === 200) {
 			i = 0;
 			link.src = forward;
 			direction = "Right"
